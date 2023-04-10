@@ -94,14 +94,47 @@
 </div>
 </div>
 
-<!-- End of Title -->
+<!-- End of Title
 
-<!-- Content -->
-<div class="container">
+Content -->
+ <div class="container">
 <div class="clear">
+</div>
+<div class="myProducts" >
+    <div class="myProducts-gallery">
+        <img src="Gallery_images/1.jpg"
+            alt="click here" 
+            onclick="myImageFunction(this)">
+        <img src=
+"Gallery_images/2.jpg"
+            alt="click here"
+            onclick="myImageFunction(this)">
+        <img src=
+"Gallery_images/4.jpg"
+           alt="click here" 
+            onclick="myImageFunction(this)">
+        <img src=
+"Gallery_images/5.jpg"
+            alt="click here" 
+            onclick="myImageFunction(this)">
+    </div>
+
+    <div class="image-container">
+        <img id="img-Box" src=
+"Gallery_images/1.jpg"
+            alt="click here">
+    </div>
 </div>
 				</div>
 <!-- End of Container -->
+
+
+<script>
+    function myImageFunction(productSmallImg) {
+        var productFullImg = document.getElementById("img-Box");
+        productFullImg.src = productSmallImg.src;
+    }
+</script>
 
 
 
