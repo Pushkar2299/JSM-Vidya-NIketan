@@ -17,39 +17,6 @@
         }
     });
 </script>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-		//jQuery.noConflict();
-       // var url = 'https://www.parentsalarm.com/Service/WebGalleryjsonp';
-        var data = "1090";
-        $.ajax({
-            url: url,
-            data: { 'id': data },
-            type: "GET",
-            dataType: "jsonp",
-            jsonp: "callback",
-            success: function (data) {
-                var data = JSON.parse(data);
-				var a="";
-                $.each(data, function (i) {                    
-					if(a==""||a!=data[i].wbGal.GalleryTitle)
-					{
-							$('.container').append('<h2 style="border-bottom:1px dashed #FF931E!important; color:#454545!important; padding:10px 0 10px 0px!important; width:1000px!important; font-size:16px!important; margin-top:20px!important; font-weight:bold; margin-bottom:10px!important; margin:0 auto; padding:0; clear:both!important; margin-left:10px!important;">'+data[i].wbGal.GalleryTitle+'</h2>');
-					//document.getElementById("GalleryTitleBoys").innerHTML = data[i].wbGal.GalleryTitle;
-						a = data[i].wbGal.GalleryTitle;
-					}
-					$('.container').append('<ul class="lb-album"><li><a href="#image-'+i+'"><img src="'+data[i].AttachmentPath+'" alt="image01"><span>' + data[i].GalleryName + '</span></a><div class="lb-overlay" id="image-'+i+'"><img src="'+data[i].AttachmentPath+'" alt="image01" /><div><a href="#image-10" class="lb-prev">Prev</a><a href="#image-2" class="lb-next">Next</a></div><a href="#page" class="lb-close">x Close</a></div></li></ul>');                    
-                });
-            },
-            error: function () {
-                alert("failed");
-
-            }
-
-        });
-    });
-</script>
 </head>
 
 <body>
@@ -94,9 +61,9 @@
 </div>
 </div>
 
-<!-- End of Title
+ <!-- End of Title -->
 
-Content -->
+<!-- Content -->
  <div class="container">
 <div class="clear">
 </div>

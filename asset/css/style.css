@@ -30,7 +30,7 @@ body{margin:0 auto; padding:0; font-family:"Open Sans";}
 #main{width:1000px; margin:0 auto; padding:0;}
 .header{width:100%; min-width:1000px; height:82px; background:#FFF4E0; border-bottom:5px solid #145DAF;}
 .inner-header{width:1000px; height:82px; margin:0 auto; padding:0;}
-.logo{width:330px; height:82px; float:left;}
+.logo{width:200px; height:82px; float:left;}
 
 /*nav*/
 .nav{
@@ -57,10 +57,10 @@ nav {
 	position:		relative;
 }
 .sf-menu a {
-	margin-right:5px;
-	display:		block;
+	margin-right:6px;
+	display:block;
 	color:#000;
-	font-size:14px;
+	font-size:16px;
 	line-height:24px;
 	/*padding:3px 10px 3px 10px;*/
 	padding: 3px 5px 3px 5px;
@@ -70,7 +70,7 @@ nav {
 .sf-menu a:hover,
 .sf-menu li.current> a,
 .sf-menu li.sfHover > a {
-	background:#e3180c;
+	background:#e30c0c;
 	text-decoration:none;
 	color:#fff;
 }
